@@ -15,17 +15,26 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-xl navbar-dark">
-    <a class="navbar-brand" href="#" style="font-family: 'Poiret One',cursive">Manak Pandey</a>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="#" style="font-family: 'Poiret One',cursive">Manak Pandey</a>
+		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar_items" aria-controls="navbar_items" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar_items">
+			<div class="navbar-nav ml-auto">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        	<a class="nav-link" href="#about">About</a>
+      	</li>
+		</div>
+	</nav>
 
-  <div class="container d-flex align-items-center justify-content-center flex-column" id="introduction">
+  <div class="container d-flex align-items-center justify-content-center flex-column section-page" id="introduction">
     <div id="intro">Hello I'm</div>
     <div id="name">MANAK PANDEY</div>
   </div>
 
-  <div class="container">
-    
+  <div class="container section-page d-flex justify-content-end" id="about">
+    <div id="about-heading">about</div>
   </div>
 
   <!-- Optional JavaScript -->
