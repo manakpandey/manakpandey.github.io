@@ -1,0 +1,39 @@
+body{
+	background: #000000
+}
+
+.navbar{
+	position: fixed;
+	padding-top: 50px;
+	padding: 25px;
+	background: #000000;
+}
+h1{
+
+}
+#introduction{
+	min-height: 100vh;
+}
+#name{
+	font-family: Open Sans;
+	font-size: 50px;
+	color: #ffffff;
+}
+#intro{
+	font-family: Open Sans;
+	font-size: 20px;
+	color: #646464;
+}
+
+@media only screen and (max-width: 600px){
+	#name{
+		font-family: Open Sans;
+		font-size: 30px;
+		color: #ffffff;
+	}
+	#intro{
+		font-family: Open Sans;
+		font-size: 12px;
+		color: #646464;
+	}
+}
