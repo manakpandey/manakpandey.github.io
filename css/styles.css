@@ -8,54 +8,86 @@ body{
 
 .navbar{
 	position: fixed;
-	padding-top: 50px;
 	min-width: 100%;
-	padding: 25px;
+	padding-left: 25px;
+	padding-right: 35px;
+	padding-top: 25px;
+	padding-bottom: 10px;
 	background: #000000;
+	z-index: 10;
 }
 
 .section-page{
 	min-height: 100vh;
 }
+
+.heading-faded{
+	font-size: 150px;
+	color: #646464;
+	opacity: 60%;
+	padding-top: 25px;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+	.heading-faded{
+		font-size: 90px;
+		color: #646464;
+		opacity: 60%;
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
 /*section_introduction*/
 
 #name{
+	display: none;
 	font-family: Open Sans;
 	font-size: 55px;
 	color: #ffffff;
 }
 #intro{
+	padding-top: 2.5vh;
+	display: none;
 	font-family: Open Sans;
 	font-size: 30px;
 	color: #646464;
 }
-
-@media only screen and (max-width: 768px){
+#scroll-down{
+	display: none;
+}
+@media screen and (max-width: 768px){
 	#name{
+		display: none;
 		font-family: Open Sans;
 		font-size: 30px;
 		color: #ffffff;
 	}
 	#intro{
+		display: none;
 		font-family: Open Sans;
 		font-size: 18px;
 		color: #646464;
 	}
+	#scroll-down{
+		display: none;
+	}
 }
 
 /*section_about*/
-#about-heading{
-	font-size: 150px;
-	color: #646464;
-	opacity: 60%;
-	padding: 20px;
+
+@media screen and (max-width: 768px){
+	#about-text{
+		padding-left: 5vw;
+		padding-right: 5vw;
+		text-align: justify;
+		color: #dcdcdc;
+	}
 }
 
-@media only screen and (max-width: 768px){
-	#about-heading{
-		font-size: 90px;
-		color: #646464;
-		opacity: 60%;
-		padding: 50px;
-	}
+#about-text{
+	padding-left: 10vw;
+	text-align: justify;
+	color: #dcdcdc;
 }

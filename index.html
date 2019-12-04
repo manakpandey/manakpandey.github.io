@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans&display=swap" rel="stylesheet">
@@ -17,7 +15,9 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
-		<a class="navbar-brand" href="#" style="font-family: 'Poiret One',cursive">Manak Pandey</a>
+    <div  data-toggle="collapse" data-target=".navbar-collapse.show">
+      <a class="navbar-brand" href="#" style="font-family: 'Poiret One',cursive">Manak Pandey</a>
+    </div>
 		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar_items" aria-controls="navbar_items" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -25,6 +25,9 @@
 			<div class="navbar-nav ml-auto">
 				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
         	<a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        	<a class="nav-link" href="#skills">Skills</a>
       	</li>
 		</div>
 	</nav>
@@ -32,16 +35,34 @@
   <div class="container d-flex align-items-center justify-content-center flex-column section-page" id="introduction">
     <div id="intro">Hello I'm</div>
     <div id="name">MANAK PANDEY</div>
+    <a id="scroll-down" href="#about">
+      <img src="icons/round_expand_more_white_48dp.png">
+    </a>
   </div>
 
-  <div class="container section-page d-flex justify-content-end" id="about">
-    <div id="about-heading">about</div>
+  <div class="container section-page" id="about">
+    <div class="heading-faded">about</div>
+    <div class="container" id="about-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui
+      officia deserunt mollit anim id est laborum.
+    </div>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <div class="container section-page" id="skills">
+    <div class="heading-faded">skills</div>
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
