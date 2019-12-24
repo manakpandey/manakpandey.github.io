@@ -27,6 +27,7 @@ body{
 	opacity: 60%;
 	padding-top: 25px;
 	padding-right: 20px;
+	text-align: right;
 }
 
 @media screen and (max-width: 768px){
@@ -34,9 +35,8 @@ body{
 		font-size: 90px;
 		color: #646464;
 		opacity: 60%;
+		text-align: center;
 		padding-top: 50px;
-		padding-left: 50px;
-		padding-right: 50px;
 	}
 }
 /*section_introduction*/
@@ -73,21 +73,52 @@ body{
 	#scroll-down{
 		display: none;
 	}
+	.scroll-down-icon{
+		width: 48px;
+		height: 48px;
+	}
 }
 
 /*section_about*/
-
-@media screen and (max-width: 768px){
-	#about-text{
-		padding-left: 5vw;
-		padding-right: 5vw;
-		text-align: justify;
-		color: #dcdcdc;
-	}
-}
 
 #about-text{
 	padding-left: 10vw;
 	text-align: justify;
 	color: #dcdcdc;
+	float: right;
+	max-width: 70%;
+}
+
+#profile-img-container{
+	float: left;
+	max-width: 30%;
+}
+
+#profile-img{
+	width: 125%;
+	height: 125%;
+	border-radius: 50%;
+	padding: 10%;
+}
+
+@media screen and (max-width: 768px){
+	#about-text{
+		padding-left: 0;
+		padding-right: 0;
+		text-align: justify;
+		color: #dcdcdc;
+		float: none;
+	}
+
+	#profile-img-container{
+		float: none;
+		min-width: 100%;
+		text-align: center;
+	}
+
+	#profile-img{
+		width: 90%;
+		height: 90%;
+		border-radius: 50%;
+	}
 }
