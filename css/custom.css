@@ -2,3 +2,8 @@ a[href^=tel] {
     text-decoration: inherit;
     color: inherit;
 }
+
+.youtube-embed{
+    max-width: 100%;
+    max-height: fit-content;
+}
