@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /*
+
+Sitemap: https://manakpandey.github.io/sitemap.xml
