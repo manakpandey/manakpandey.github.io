@@ -12,3 +12,16 @@ a[href^="tel"] {
   text-decoration: inherit;
   color: inherit;
 }
+
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  margin-top: 15px;
+}
+
+.header-logo a {
+  color: white;
+  font-family: 'Homemade Apple', cursive;
+}
