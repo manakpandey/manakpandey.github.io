@@ -25,3 +25,8 @@ a[href^="tel"] {
   color: white;
   font-family: 'Homemade Apple', cursive;
 }
+
+.portfolio-more {
+  text-align: center;
+  margin-top: 40px;
+}
