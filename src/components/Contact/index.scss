@@ -1,0 +1,23 @@
+@import "../../scss/colors";
+
+.mp-contact_wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 60px;
+
+  *::selection {
+    background: $black;
+    color: $white;
+  }
+
+  .mp-contact {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

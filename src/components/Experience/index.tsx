@@ -1,4 +1,3 @@
-import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Heading, Para, SubHeading } from "../../primitives/Typography"
 import "./index.scss"
