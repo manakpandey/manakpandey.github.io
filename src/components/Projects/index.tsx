@@ -51,9 +51,9 @@ export default function Projects() {
                 <a
                   href={project.yt}
                   target="_blank"
-                  style={{ textDecoration: "none", color: "#b58e58" }}
+                  style={{ color: "#b58e58" }}
                 >
-                  (Preview)
+                  Preview.
                 </a>
               ) : (
                 ""

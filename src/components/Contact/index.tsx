@@ -1,19 +1,8 @@
-import React, { useLayoutEffect, useState } from "react"
-import { Display, Heading, Para, SubHeading } from "../../primitives/Typography"
+import React from "react"
+import { Display, SubHeading } from "../../primitives/Typography"
 import "./index.scss"
 
-export default function Contact() {
-  const [ws, setWs] = useState(window.innerWidth)
-
-  useLayoutEffect(() => {
-    function updateSize() {
-      setWs(window.innerWidth)
-    }
-    window.addEventListener("resize", updateSize)
-    updateSize()
-    return () => window.removeEventListener("resize", updateSize)
-  }, [])
-
+export default function Contact({ ws }: { ws: number }) {
   return (
     <div className={"mp-contact_wrapper"} id={"contact"}>
       <div className={"mp-contact"}>

@@ -7,9 +7,6 @@ import { Para } from "../../primitives/Typography"
 export default function Header() {
   return (
     <header className="mp-navbar">
-      <div className="mp-navbar_logo">
-        <Link to="/">LOGO</Link>
-      </div>
       <div className="mp-navbar_nav">
         <Para>
           <Link to="#about">About</Link>

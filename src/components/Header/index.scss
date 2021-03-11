@@ -1,17 +1,11 @@
 @import "../../scss/colors";
 
 .mp-navbar {
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   z-index: 99;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
-  .mp-navbar_logo {
-    height: 64px;
-    margin: 20px;
-  }
 
   .mp-navbar_nav {
     display: flex;

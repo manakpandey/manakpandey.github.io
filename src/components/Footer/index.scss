@@ -2,12 +2,26 @@
 
 .mp-footer {
   background-color: $black;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  height: 10%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 40px;
   padding-top: 40px;
+
+  *::selection {
+    background: $white;
+    color: $black;
+  }
+
+  .mp-footer_links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
+    & > div {
+      margin: 8px;
+    }
+  }
 }
