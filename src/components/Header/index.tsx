@@ -15,7 +15,13 @@ export default function Header() {
           <Link to="#about">About</Link>
         </Para>
         <Para>
+          <Link to="#experience">Experience</Link>
+        </Para>
+        <Para>
           <Link to="#projects">Projects</Link>
+        </Para>
+        <Para>
+          <Link to="#contact">Contact</Link>
         </Para>
       </div>
     </header>

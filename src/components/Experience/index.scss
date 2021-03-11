@@ -1,0 +1,49 @@
+@import "../../scss/colors";
+
+.mp-experience_wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 60px;
+
+  *::selection {
+    background: $black;
+    color: $white;
+  }
+
+  .mp-experience {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mp-experience_section {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      @media only screen and (min-width: 768px) {
+        //for large screens
+
+        & > div {
+          margin: 8px;
+        }
+
+        & > div:first-of-type {
+          flex: 40%;
+        }
+        & > div:last-of-type {
+          flex: 60%;
+        }
+
+        max-width: 80%;
+        flex-direction: row;
+      }
+    }
+  }
+}
