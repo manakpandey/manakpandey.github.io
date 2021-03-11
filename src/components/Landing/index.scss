@@ -18,20 +18,6 @@
     text-align: center;
   }
 
-  @keyframes reveal {
-    from {
-      opacity: 1%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-
-  .mp-reveal {
-    overflow: hidden;
-    animation: reveal 2s; // delay iteration-count direction fill-mode;
-  }
-
   .mp-landing_links {
     display: flex;
     flex-direction: row;

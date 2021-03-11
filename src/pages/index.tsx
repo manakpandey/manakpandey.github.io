@@ -11,7 +11,7 @@ import Contact from "../components/Contact"
 import MobileNav from "../components/MobileNav"
 
 const IndexPage = () => {
-  const [ws, setWs] = React.useState(window.innerWidth)
+  const [ws, setWs] = React.useState<number>(0)
 
   React.useLayoutEffect(() => {
     function updateSize() {

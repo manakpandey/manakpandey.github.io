@@ -13,11 +13,9 @@ export default function Landing() {
 
       <div className="mp-landing_content">
         <SubHeading>Hello, World.</SubHeading>
-        <div className="mp-reveal">
-          <Display>
-            I'm <span className="mp-highlight">Manak</span> Pandey
-          </Display>
-        </div>
+        <Display>
+          I'm <span className="mp-highlight">Manak</span> Pandey
+        </Display>
         <Para>| Software Engineer |</Para>
       </div>
 
