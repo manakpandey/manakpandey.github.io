@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap);
+
+
+@mixin typography {
+  display: block;
+}
+
+.mp-display {
+  @include typography();
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 90px;
+  }
+}
+
+.mp-heading {
+  @include typography();
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+.mp-sub_heading {
+  @include typography();
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.mp-para {
+  @include typography();
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}

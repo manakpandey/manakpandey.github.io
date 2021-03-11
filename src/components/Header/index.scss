@@ -1,0 +1,41 @@
+@import "../../scss/colors";
+
+.mp-navbar {
+  position: fixed;
+  top: 0;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .mp-navbar_logo {
+    height: 64px;
+    margin: 20px;
+  }
+
+  .mp-navbar_nav {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    & > div > a {
+      text-decoration: none;
+      margin: 8px;
+      padding-right: 4px;
+      padding-left: 4px;
+      color: $black;
+      transition: 500ms;
+      font-size: 20px;
+
+      &:hover {
+        box-shadow: inset 0 -8px 0px 0px $gold;
+      }
+    }
+  }
+}
