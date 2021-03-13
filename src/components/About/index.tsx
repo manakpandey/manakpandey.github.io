@@ -1,6 +1,11 @@
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { Heading, Para, SubHeading } from "../../primitives/Typography"
+import {
+  Heading,
+  Para,
+  SubHeading,
+  TextAlign,
+} from "../../primitives/Typography"
 import "./index.scss"
 
 export default function About() {
@@ -38,7 +43,9 @@ export default function About() {
         </div>
 
         <div className={"mp-about_section"}>
-          <SubHeading color="#fff">Languages & Frameworks</SubHeading>
+          <SubHeading color="#fff">
+            Languages & Frameworks
+          </SubHeading>
           <div className={"mp-about_skills"}>
             <StaticImage
               src="../../images/cpp.png"

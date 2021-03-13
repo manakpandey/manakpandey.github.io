@@ -2,9 +2,16 @@ import React from "react"
 
 import "./index.scss"
 
+export enum TextAlign {
+  center = "center",
+  left = "left",
+  right = "right",
+  justify = "justify",
+}
 interface IProps {
   children: React.ReactNode
   color?: string
+  align?: TextAlign
 }
 
 export function Display({ children, color }: IProps) {
@@ -23,10 +30,10 @@ export function Heading({ children, color }: IProps) {
   )
 }
 
-export function SubHeading({ children, color }: IProps) {
+export function SubHeading({ children, color, align=TextAlign.center }: IProps) {
   return (
     <div
-      className="mp-sub_heading"
+      className={`mp-sub_heading mp-align_${align}`}
       style={color ? { color: color } : undefined}
     >
       {children}

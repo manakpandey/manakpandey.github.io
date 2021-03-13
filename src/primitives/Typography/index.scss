@@ -51,3 +51,18 @@
     font-size: 16px;
   }
 }
+
+.mp-align {
+  &_center {
+    text-align: center;
+  }
+  &_left {
+    text-align: left;
+  }
+  &_right {
+    text-align: right;
+  }
+  &_justify {
+    text-align: justify;
+  }
+}

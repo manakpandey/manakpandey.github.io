@@ -37,8 +37,8 @@ export default function Projects() {
     <div className={"mp-projects_wrapper"} id={"projects"}>
       <div className={"mp-projects"}>
         <Heading color={"#fff"}>Projects</Heading>
-        {projects.map(project => (
-          <div className={"mp-projects_section"}>
+        {projects.map((project,i) => (
+          <div className={"mp-projects_section"} key={i}>
             <SubHeading color="#fff">
               {project.name}{" "}
               <a href={project.link} target="_blank">
