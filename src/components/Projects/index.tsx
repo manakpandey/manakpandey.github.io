@@ -1,7 +1,7 @@
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Github from "../../icons/github"
-import { Heading, Para, SubHeading } from "../../primitives/Typography"
+import { Heading, Para, SubHeading, TextAlign } from "../../primitives/Typography"
 import "./index.scss"
 
 export default function Projects() {
@@ -39,7 +39,7 @@ export default function Projects() {
         <Heading color={"#fff"}>Projects</Heading>
         {projects.map((project,i) => (
           <div className={"mp-projects_section"} key={i}>
-            <SubHeading color="#fff">
+            <SubHeading color="#fff" align={TextAlign.left}>
               {project.name}{" "}
               <a href={project.link} target="_blank">
                 <Github color={"#fff"} size={18} />

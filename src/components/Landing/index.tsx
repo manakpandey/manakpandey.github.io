@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./index.scss"
-import { Display, Para, SubHeading } from "../../primitives/Typography"
+import { Display, Para, SubHeading, TextAlign } from "../../primitives/Typography"
 import Github from "../../icons/github"
 import LinkedIn from "../../icons/linkedin"
 import Header from "../Header"
@@ -12,7 +12,7 @@ export default function Landing() {
       <Header />
 
       <div className="mp-landing_content">
-        <SubHeading>Hello, World.</SubHeading>
+        <SubHeading align={TextAlign.center}>Hello, World.</SubHeading>
         <Display>
           I'm <span className="mp-highlight">Manak</span> Pandey
         </Display>

@@ -11,7 +11,7 @@ import "./index.scss"
 export default function About() {
   const iconOptions = {
     width: 48,
-    quality: 95,
+    quality: 100,
   }
 
   return (
@@ -25,9 +25,9 @@ export default function About() {
               width={250}
               quality={95}
               formats={[
-                "AUTO" as ImageFormat,
-                "WEBP" as ImageFormat,
-                "AVIF" as ImageFormat,
+                "auto" as ImageFormat,
+                "webp" as ImageFormat,
+                "avif" as ImageFormat,
               ]}
               alt="Profile Picture"
               style={{ borderRadius: "30%" }}
@@ -43,9 +43,7 @@ export default function About() {
         </div>
 
         <div className={"mp-about_section"}>
-          <SubHeading color="#fff">
-            Languages & Frameworks
-          </SubHeading>
+          <SubHeading color="#fff" align={TextAlign.center}>Languages & Frameworks</SubHeading>
           <div className={"mp-about_skills"}>
             <StaticImage
               src="../../images/cpp.png"

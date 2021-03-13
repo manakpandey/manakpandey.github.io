@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Para, SubHeading } from "../../primitives/Typography"
+import { Heading, Para, SubHeading, TextAlign } from "../../primitives/Typography"
 import "./index.scss"
 
 export default function Experience() {
@@ -9,7 +9,7 @@ export default function Experience() {
         <Heading>Experience</Heading>
 
         <div className={"mp-experience_section"}>
-          <SubHeading>
+          <SubHeading align={TextAlign.left}>
             <span className="mp-highlight">SDE Intern</span> at Gmetri XR
           </SubHeading>
           <Para>
@@ -20,7 +20,7 @@ export default function Experience() {
           </Para>
         </div>
         <div className={"mp-experience_section"}>
-          <SubHeading>
+          <SubHeading align={TextAlign.left}>
             <span className="mp-highlight">Research</span> on Data Compression
           </SubHeading>
           <Para>
