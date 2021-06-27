@@ -30,20 +30,28 @@ export default function About() {
                 "avif" as ImageFormat,
               ]}
               alt="Profile Picture"
-              style={{ borderRadius: "30%" }}
+              style={{ borderRadius: "30%", minWidth: 200 }}
             />
-            <span style={{ width: "64px", height: "64px" }} />
+            <span style={{ width: "100px", height: "64px" }} />
             <Para color={"#fff"}>
-              Hi, I am a Developer with a hankering to learn and build something
-              new. I am currently pursuing a Bachelor's of Technology in
-              Computer Science and Engineering from Vellore Institute of
-              Technology.
+              The go-to guy for fixing any technical problems. I develop
+              innovative software to solve the problems of the companies. My
+              most recent projects involved designing and developing a new
+              system to make the research used for Business Development faster
+              and more efficient. This helped the executives make better and
+              informed decisions giving them a tactical advantage over the
+              competition. I have a hankering to learn and build new stuff. This
+              involves learning new languages (computer) and frameworks, and
+              trying out new open-source tech. Feel free to get in touch to
+              learn more about me.
             </Para>
           </div>
         </div>
 
         <div className={"mp-about_section"}>
-          <SubHeading color="#fff" align={TextAlign.center}>Languages & Frameworks</SubHeading>
+          <SubHeading color="#fff" align={TextAlign.center}>
+            Languages & Frameworks
+          </SubHeading>
           <div className={"mp-about_skills"}>
             <StaticImage
               src="../../images/cpp.png"

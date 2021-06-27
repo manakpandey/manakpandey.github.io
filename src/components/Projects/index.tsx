@@ -1,11 +1,23 @@
-import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Github from "../../icons/github"
-import { Heading, Para, SubHeading, TextAlign } from "../../primitives/Typography"
+import {
+  Heading,
+  Para,
+  SubHeading,
+  TextAlign,
+} from "../../primitives/Typography"
 import "./index.scss"
 
 export default function Projects() {
   const projects = [
+    {
+      name: "Yogasaan",
+      link: "https://github.com/manakpandey/yogasaan",
+      yt: "https://yogasaan.tech",
+      description: `A web-based system which helps the users to improve their yoga poses by scoring them. The system
+      provides analytics and a leaderboard which gamifyies the experience and promotes better learning and
+      provides motivation.`,
+    },
     {
       name: "Vote-at-MUN",
       link: "https://github.com/VITCMUN/vote-at-mun",
@@ -37,7 +49,7 @@ export default function Projects() {
     <div className={"mp-projects_wrapper"} id={"projects"}>
       <div className={"mp-projects"}>
         <Heading color={"#fff"}>Projects</Heading>
-        {projects.map((project,i) => (
+        {projects.map((project, i) => (
           <div className={"mp-projects_section"} key={i}>
             <SubHeading color="#fff" align={TextAlign.left}>
               {project.name}{" "}
