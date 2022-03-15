@@ -1,13 +1,25 @@
-import React from "react"
-import { Heading, Para, SubHeading, TextAlign } from "../../primitives/Typography"
 import "./index.scss"
+
+import { Heading, Para, SubHeading, TextAlign } from "../../primitives/Typography"
+
+import React from "react"
 
 export default function Experience() {
   return (
     <div className={"mp-experience_wrapper"} id={"experience"}>
       <div className={"mp-experience"}>
         <Heading>Experience</Heading>
-
+        <div className={"mp-experience_section"}>
+          <SubHeading align={TextAlign.left}>
+            <span className="mp-highlight">SDE Intern</span> at udaan.com
+          </SubHeading>
+          <Para>
+            {/* Worked alongside an awesome team, building highly scalable
+            applications and fixing bugs along the way.
+            <br /> */}
+            <span style={{ fontWeight: 400 }}>Jan 2022 - Present</span>
+          </Para>
+        </div>
         <div className={"mp-experience_section"}>
           <SubHeading align={TextAlign.left}>
             <span className="mp-highlight">SDE Intern</span> at Gmetri XR
