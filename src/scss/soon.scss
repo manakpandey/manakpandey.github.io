@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.mp-soon{
+    width:100vw;
+    height: 100vh;
+    background: no-repeat center url("https://s.pharmiq.co/muwjaehbsghkvh.JPG");
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>.mp-soon_timer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
