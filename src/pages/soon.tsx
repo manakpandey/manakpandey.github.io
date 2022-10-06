@@ -6,7 +6,7 @@ import "../scss/soon.scss"
 
 const Soon = () => {
 
-  const TARGET_TIME = new Date(2022, 10, 22)
+  const TARGET_TIME = new Date(2022, 10, 19)
   const [currTime, setCurrTime] = useState<Date>(new Date())
 
 
