@@ -1,12 +1,14 @@
-import * as React from "react"
-import {CSSProperties, useEffect, useState} from "react"
-import moment from "moment";
 import "../scss/soon.scss"
 
+import * as React from "react"
+
+import {CSSProperties, useEffect, useState} from "react"
+
+import moment from "moment";
 
 const Soon = () => {
 
-  const TARGET_TIME = new Date(2022, 10, 19)
+  const TARGET_TIME = new Date('2022-10-19 21:37')
   const [currTime, setCurrTime] = useState<Date>(new Date())
 
 
