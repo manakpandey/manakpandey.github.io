@@ -1,19 +1,25 @@
-import React from "react"
-import Github from "../../icons/github"
+import "./index.scss"
+
 import {
   Heading,
   Para,
   SubHeading,
   TextAlign,
 } from "../../primitives/Typography"
-import "./index.scss"
+
+import Github from "../../icons/github"
+import React from "react"
 
 export default function Projects() {
   const projects = [
     {
+      name: "Physiocs",
+      link: "https://github.com/manakpandey/physiocs",
+      description: `A platform for physiotherapy patients to get the prescribed therapy monitored by computer vision at home.`,
+    },
+    {
       name: "Yogasaan",
       link: "https://github.com/manakpandey/yogasaan",
-      yt: "https://yogasaan.tech",
       description: `A web-based system which helps the users to improve their yoga poses by scoring them. The system
       provides analytics and a leaderboard which gamifyies the experience and promotes better learning and
       provides motivation.`,
@@ -21,7 +27,6 @@ export default function Projects() {
     {
       name: "Vote-at-MUN",
       link: "https://github.com/VITCMUN/vote-at-mun",
-      yt: "https://youtu.be/RR8s1OnV2Jw",
       description: `A real-time voting system for VITC-Model United Nations using
       GraphQL. The maximum voters supposed to vote at a given time are
       about 200 in number.`,
@@ -59,7 +64,7 @@ export default function Projects() {
             </SubHeading>
             <Para color={"#fff"}>
               {project.description}{" "}
-              {project.yt ? (
+              {/* {project.yt ? (
                 <a
                   href={project.yt}
                   target="_blank"
@@ -69,7 +74,7 @@ export default function Projects() {
                 </a>
               ) : (
                 ""
-              )}
+              )} */}
             </Para>
           </div>
         ))}

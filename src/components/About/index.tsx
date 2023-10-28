@@ -1,12 +1,14 @@
-import { ImageFormat, StaticImage } from "gatsby-plugin-image"
-import React from "react"
+import "./index.scss"
+
 import {
   Heading,
   Para,
   SubHeading,
   TextAlign,
 } from "../../primitives/Typography"
-import "./index.scss"
+import { ImageFormat, StaticImage } from "gatsby-plugin-image"
+
+import React from "react"
 
 export default function About() {
   const iconOptions = {
@@ -21,7 +23,7 @@ export default function About() {
           <Heading color="#fff">About</Heading>
           <div className={"mp-about_bio"}>
             <StaticImage
-              src="../../images/dp.jpg"
+              src="../../images/dp.jpeg"
               width={250}
               quality={95}
               formats={[
@@ -34,16 +36,20 @@ export default function About() {
             />
             <span style={{ width: "100px", height: "64px" }} />
             <Para color={"#fff"}>
-              The go-to guy for fixing any technical problems. I develop
-              innovative software to solve the problems of the companies. My
-              most recent projects involved designing and developing a new
-              system to make the research used for Business Development faster
-              and more efficient. This helped the executives make better and
-              informed decisions giving them a tactical advantage over the
-              competition. I have a hankering to learn and build new stuff. This
-              involves learning new languages (computer) and frameworks, and
-              trying out new open-source tech. Feel free to get in touch to
-              learn more about me.
+              The go-to guy for finding technical solutions to problems.
+              <br/>
+              <br/> 
+              I develop innovative software to solve the problems of companies. My
+              most recent projects involved designing and creating a new system
+              to make Business Development faster and more efficient by
+              generating insights from unstructured data. It helped the
+              executives make better and more informed decisions, giving them a
+              tactical advantage over the competition. I have a hankering to
+              learn and build new stuff, which involves learning new languages
+              (computer) and frameworks and trying out new open-source tech.
+              <br/>
+              <br/>
+              Feel free to get in touch to learn more about me.
             </Para>
           </div>
         </div>

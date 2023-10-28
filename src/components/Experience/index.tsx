@@ -11,7 +11,18 @@ export default function Experience() {
         <Heading>Experience</Heading>
         <div className={"mp-experience_section"}>
           <SubHeading align={TextAlign.left}>
-            <span className="mp-highlight">Engineer</span> at udaan.com
+            <span className="mp-highlight">Co-founder & CTO</span> at PharmIQ
+          </SubHeading>
+          <Para>
+            {/* Worked alongside an awesome team, building highly scalable
+            applications and fixing bugs along the way.
+            <br /> */}
+            <span style={{ fontWeight: 400 }}>Sep 2020 - Present</span>
+          </Para>
+        </div>
+        <div className={"mp-experience_section"}>
+          <SubHeading align={TextAlign.left}>
+            <span className="mp-highlight"> Software Engineer</span> at udaan.com
           </SubHeading>
           <Para>
             {/* Worked alongside an awesome team, building highly scalable
