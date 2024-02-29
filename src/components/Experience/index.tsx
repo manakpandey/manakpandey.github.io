@@ -9,7 +9,7 @@ export default function Experience() {
     <div className={"mp-experience_wrapper"} id={"experience"}>
       <div className={"mp-experience"}>
         <Heading>Experience</Heading>
-        <div className={"mp-experience_section"}>
+        {/* <div className={"mp-experience_section"}>
           <SubHeading align={TextAlign.left}>
             <span className="mp-highlight">Co-founder & CTO</span> at PharmIQ
           </SubHeading>
@@ -19,7 +19,7 @@ export default function Experience() {
             <br />
             <span style={{ fontWeight: 400 }}>Sep 2020 - Present</span>
           </Para>
-        </div>
+        </div> */}
         <div className={"mp-experience_section"}>
           <SubHeading align={TextAlign.left}>
             <span className="mp-highlight"> Software Engineer</span> at udaan.com
