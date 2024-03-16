@@ -13,7 +13,7 @@ import MobileNav from "../components/MobileNav"
 const IndexPage = () => {
   const [ws, setWs] = React.useState<number>(1080)
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     function updateSize() {
       setWs(window.innerWidth)
     }
@@ -24,7 +24,7 @@ const IndexPage = () => {
 
   return (
     <div className={"mp-global"}>
-      <SEO title="Portfolio" description="Portfolio of Manak Pandey"/>
+      <SEO title="Portfolio" description="Portfolio of Manak Pandey" />
       <Landing />
       <About />
       <Experience />
